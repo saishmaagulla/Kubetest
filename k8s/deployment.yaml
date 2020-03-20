@@ -1,5 +1,5 @@
 kind: Deployment
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 metadata:
   name: wordpress
   labels:
@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: wordpress
-        image: gcr.io/level-calculus-268016/test-wordpress:v1
+        image: gcr.io/level-calculus-268016/test-saishma-wordpress:v1
         imagePullPolicy: Always
         ports:
         - name: wordpress
