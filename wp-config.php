@@ -29,7 +29,7 @@ define( 'DB_USER', 'testsaishma' );
 define( 'DB_PASSWORD', 'root' );
 
 /** MySQL hostname */
-define( 'DB_HOST', '34.66.49.225' );
+define( 'DB_HOST', '35.192.209.52' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );

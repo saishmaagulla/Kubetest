@@ -2,10 +2,8 @@ steps:
   # build the container image
 - name: "gcr.io/cloud-builders/docker"
   args: ["build", "-t", "gcr.io/$PROJECT_ID/test-wordpress:v1", "."]
+  images: ["gcr.io/$PROJECT_ID/test-wordpress:v1"]
   # push container image
-- name: "gcr.io/cloud-builders/docker"
-  args: ["push", "gcr.io/$PROJECT_ID/test-wordpress:v1"]
-  # deploy container image to GKE
 - name: "gcr.io/cloud-builders/gke-deploy"
   args:
   - apply
