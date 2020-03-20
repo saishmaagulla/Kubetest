@@ -2,6 +2,8 @@ kind: Service
 apiVersion: v1
 metadata:
   name: wordpress
+  labels:
+    app: wordpress
 spec:
   type: LoadBalancer
   ports:
@@ -11,3 +13,5 @@ spec:
     protocol: TCP
   selector:
     app: wordpress
+    tier: frontend
+
