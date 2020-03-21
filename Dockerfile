@@ -1,1 +1,2 @@
-FROM wordpress:php7.4-apache
+FROM wordpress:latest
+COPY . /var/www/html

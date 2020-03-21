@@ -19,16 +19,7 @@ spec:
     spec:
       containers:
       - name: wordpress
-        image: gcr.io/level-calculus-268016/test-saishma-wordpress:v1
-        env:
-        - name: WORDPRESS_DB_hOST
-          value: "34.66.49.225"
-        - name: WORDPRESS_DB_USER
-          value: "testsaishma"
-        - name: WORDPRESS_DB_NAME
-          value: "wordpress"
-        - name: WORDPRESS_DB_PASSWORD
-          value: "root"
+        image: gcr.io/level-calculus-268016/test-saishma-wordpress
         imagePullPolicy: Always
         ports:
         - name: wordpress
